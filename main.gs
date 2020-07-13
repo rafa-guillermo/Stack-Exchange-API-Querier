@@ -2,9 +2,9 @@ const STACKEXCHANGE_API_KEY = "";
 const baseUrl = "https://api.stackexchange.com/2.2/";
 const sheetID = "SSID";
 const sheet = SpreadsheetApp.openById(SSID).getSheetByName("Sheet1");
+
 /*
 Example params object:
-
 var params = {
   "pagesize": 100,
   "fromdate": 1220227200,
