@@ -31,7 +31,8 @@ function get(params) {
   do {
     try {      
       var response = JSON.parse(UrlFetchApp.fetch(baseUrl + urlParameterfy(params) + "key=" + STACKEXCHANGE_API_KEY + "&page=" + parseInt(count))
-                         .getContentText());
+                                           .getContentText());
+      
       PropertiesService.getScriptProperties().setProperty("count", count);
       
       for (var i = 0; i < response["items"].length; i++) {
